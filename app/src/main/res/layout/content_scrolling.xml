@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.android.mrinal.base.ScrollingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:background="@drawable/side_nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="23sp"
+            android:textColor="#fff"
+            android:padding="@dimen/margn"
+            android:text="Input any of the field"
+            android:id="@+id/headText"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/headText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margn">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textPrimary"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Binary"
+                    android:id="@+id/textView"
+                    android:layout_marginRight="@dimen/text_margin"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="@dimen/text_margin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/binary"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignTop="@+id/textView"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:layout_marginRight="@dimen/text_margin"
+                    android:digits="01"
+                    android:inputType = "number"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textPrimary"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_below="@+id/binary"
+                    android:text="Decimal"
+                    android:id="@+id/textView2"
+                    android:layout_marginRight="@dimen/text_margin"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="@dimen/text_margin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/decimal"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignTop="@+id/textView2"
+                    android:layout_alignStart="@+id/textView2"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:layout_marginRight="@dimen/text_margin"
+                    android:digits="0123456789"
+                    android:maxLength="19"
+                    android:inputType = "number"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textPrimary"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_below="@+id/decimal"
+                    android:text="Octal"
+                    android:id="@+id/textView3"
+                    android:layout_marginRight="@dimen/text_margin"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="@dimen/text_margin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/octal"
+                    android:layout_below="@+id/textView3"
+                    android:layout_alignTop="@+id/textView3"
+                    android:layout_alignStart="@+id/textView3"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:layout_marginRight="@dimen/text_margin"
+                    android:digits="01234567"
+                    android:maxLength="22"
+                    android:inputType = "number"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textPrimary"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_below="@+id/octal"
+                    android:text="Hexadecimal"
+                    android:id="@+id/textView4"
+                    android:layout_marginRight="@dimen/text_margin"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="@dimen/text_margin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hex"
+                    android:layout_below="@+id/textView4"
+                    android:layout_alignTop="@+id/textView4"
+                    android:layout_alignStart="@+id/textView4"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:layout_marginRight="@dimen/text_margin"
+                    android:digits="0123456789abcdef"
+                    android:maxLength="64"
+                    android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
